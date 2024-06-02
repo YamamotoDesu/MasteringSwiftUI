@@ -1,3 +1,4 @@
+https://medium.com/@vladislavshkodich/mastering-swiftui-are-you-really-as-good-as-you-think-40a4953f7e88
 
 ## Performance
 ### Rule number 1: Keep your View body simple!
