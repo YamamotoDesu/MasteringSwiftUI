@@ -18,3 +18,22 @@ var body: some View {
 
 The reason this is so important is that the system can actually call your body multiple times in the single layout phase. 
 For example some combinations of modifiers and GeometryReader.
+
+### Rule number 2: Preferring no effect modifiers over conditional views.
+Example:
+
+```swift
+// Avoid if possible ...
+var body: some View {
+  VStack {
+    if isHighlighted {
+      CustomView()
+        .opacity(0.8)
+    } else {
+      CustomView()
+    }
+    // ...
+  }
+}
+```
+
