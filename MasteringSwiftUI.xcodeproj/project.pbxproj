@@ -11,6 +11,7 @@
 		31678F132C0C60D000B67944 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31678F122C0C60D000B67944 /* ContentView.swift */; };
 		31678F152C0C60D200B67944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31678F142C0C60D200B67944 /* Assets.xcassets */; };
 		31678F182C0C60D200B67944 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31678F172C0C60D200B67944 /* Preview Assets.xcassets */; };
+		31678F202C0C62B300B67944 /* DebugFrame in Frameworks */ = {isa = PBXBuildFile; productRef = 31678F1F2C0C62B300B67944 /* DebugFrame */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31678F202C0C62B300B67944 /* DebugFrame in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = MasteringSwiftUI;
+			packageProductDependencies = (
+				31678F1F2C0C62B300B67944 /* DebugFrame */,
+			);
 			productName = MasteringSwiftUI;
 			productReference = 31678F0D2C0C60D000B67944 /* MasteringSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 31678F042C0C60D000B67944;
+			packageReferences = (
+				31678F1E2C0C62B300B67944 /* XCRemoteSwiftPackageReference "DebugFrame" */,
+			);
 			productRefGroup = 31678F0E2C0C60D000B67944 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		31678F1E2C0C62B300B67944 /* XCRemoteSwiftPackageReference "DebugFrame" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vdshko/DebugFrame";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		31678F1F2C0C62B300B67944 /* DebugFrame */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31678F1E2C0C62B300B67944 /* XCRemoteSwiftPackageReference "DebugFrame" */;
+			productName = DebugFrame;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 31678F052C0C60D000B67944 /* Project object */;
 }
