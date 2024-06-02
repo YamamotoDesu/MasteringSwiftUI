@@ -37,3 +37,14 @@ var body: some View {
 }
 ```
 
+```swift
+// Prefer ...
+var body: some View {
+  VStack {
+      CustomView()
+        .opacity(isHighlighted ? 0.8 : 1.0)
+    // ...
+  }
+}
+```
+
